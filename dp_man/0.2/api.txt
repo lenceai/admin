@@ -1,0 +1,69 @@
+I'll search for the current Cohesity cluster API reference documentation for you.Here's a comprehensive guide to Cohesity cluster API reference resources:
+
+## Official API Documentation
+
+**Main Documentation Portal:**
+- Cohesity API provides a RESTful interface to access the various data management operations on Cohesity cluster and Helios
+- Primary documentation: https://developer.cohesity.com/apidocs/versions/
+- Current API reference: https://developers.cohesity.com/reference
+
+## API Types Available
+
+**1. Cluster APIs**
+- Cluster APIs provides a RESTful interface to access the various data management operations on Cohesity cluster
+- Direct cluster management and operations
+- Version-specific documentation available
+
+**2. Helios APIs**  
+- Helios APIs provides a RESTful interface to access the various data management operations on Cohesity Cluster and Helios
+- Multi-cluster management through Helios platform
+- Cloud services integration
+
+**3. Reporting APIs**
+- Reporting APIs helps developers jump start in using the Helios Reporting APIs to create your own custom reports
+
+## Interactive Documentation Access
+
+**Built-in Cluster Documentation:**
+- There are two types of documentation provided on the Cluster. One is interactive page which provides live interaction to the Cluster for developers who want to gain hands-on experience on the REST APIs before start developing
+- Access via cluster UI: Help menu → REST API
+- Interactive testing interface for real-time API exploration
+
+## Authentication
+
+**Access Token Method:**
+- Before making any API requests, the first step is always to make a "POST /public/accessTokens" request with valid Cohesity credentials
+- Token-based authentication required for most operations
+- API keys available for service accounts
+
+## Code Examples and SDKs
+
+**Official Repositories:**
+- **Community Automation Samples**: https://github.com/cohesity/community-automation-samples
+  - Cohesity's API samples repository! with PowerShell and Python examples
+- **PowerShell Module**: https://github.com/cohesity/cohesity-powershell-module
+- **Python SDK**: https://github.com/cohesity/management-sdk-python
+- **Go SDK**: https://github.com/cohesity/go-sdk
+- **Ansible Collection**: https://github.com/cohesity/ansible-collection
+
+## API Base Paths
+
+**Common Endpoints:**
+- Cluster API: `https://[cluster-ip]/irisservices/api/v1/`
+- Helios API: `https://helios.cohesity.com/`
+- curl https://helios.cohesity.com/irisservices/api/v1 \ -H 'apiKey: {APIKEY}'
+
+## Getting Started Resources
+
+**Key Documentation:**
+- Getting Started Guide: Available in the main developer portal
+- Getting Started - Cohesity · Developer Portal provides authentication examples
+- The API documentation can be found in the [Cohesity Developers Portal](https://developers.cohesity.com/reference)
+
+## Important Notes
+
+- This API documentation is unmaintained, please look at specific cluster's RestAPI docs page - Always check your specific cluster's documentation
+- Each cluster version may have different API capabilities
+- The interactive documentation on each cluster provides the most accurate reference for that specific version
+
+For the most current and version-specific API reference, I recommend accessing the interactive documentation directly from your Cohesity cluster's web interface, as this will show the exact APIs available for your specific cluster version.
