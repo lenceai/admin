@@ -173,5 +173,5 @@ output_csv_path = 'output/data/grouped_data.csv'  # Updated path
 grouped_data.to_csv(output_csv_path, index=False)
 logging.info(f'Grouped data CSV file saved to {output_csv_path}')
 # logging.info('\nStorage distribution summary:')
-logging.info(grouped_data.to_string())  # Replaced print with logging
+logging.info(grouped_data.to_string(index=False))  # Replaced print with logging
 logging.info('Section 6 completed: Storage distribution summary generated and saved.') 
